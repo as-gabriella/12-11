@@ -1,0 +1,152 @@
+
+
+body {
+    
+    margin: 0; /* Remove as margens padrão */
+    padding: 0; /* Remove qualquer padding extra */
+    /*overflow: hidden; /* Impede que a barra de rolagem apareça */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(255, 0, 162);
+    background-image: url(imagens/globo.jfif);
+    background-size: cover;
+}
+
+
+/* Assim importamos uma fonte no Css*/
+
+@font-face {
+    font-family: 'Voguella';
+    src: url('fonts/Voguella.ttf') format('truetype');
+}
+
+
+
+  
+
+.tituloMenor {
+    font-size: 14px;
+    margin: 0;
+}
+
+#titulo1 {
+    letter-spacing: 0.3vh;
+    font-size: 10vh;
+    font-family: 'Scary';
+    margin: 0;
+}
+
+a {
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Scary';
+    letter-spacing: 0.1vh;
+}
+
+
+
+
+
+
+main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+
+
+
+
+
+
+.pai {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 30px;
+    border-radius: 30px;
+    background-color: #ffb0d7;
+    box-shadow: 0 0 20px 10px rgb(255, 104, 197); /* Cria a borda suave com efeito de luz verde */
+    
+}
+
+
+
+
+.botao {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 7px;
+    color: black;
+    background-color: lawngreen;
+    border: none;
+}
+
+.botao:hover {
+    background-color: #ff6500;
+    color: #fd00ca;
+    
+    text-shadow: 0 0 10px #fde800;
+}
+
+
+
+#page2 {
+    background-image: url(imagens/shine.jfif);
+    background-size: cover;
+
+
+}
+
+
+.pergunta {
+    font-size: 5vh;
+    font-family: 'Voguella';
+    margin: 0;
+    letter-spacing: 0.3vh;
+}
+
+
+
+.resposta {
+    width: 300px;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-family: 'Voguella';
+    color: chartreuse;
+    background-color: #fd00ca;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: all 0.3 ease;
+}
+
+.resposta:hover {
+    background-color: aqua;
+    color: #ff6500;
+    text-shadow: 0 0 10px hotpink;
+    transform: scale(1.1);
+
+
+}
+
+/*Estilo para a tela cheia de erro */
+.tela-cheia {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.tela-cheia img {
+    width:100%;
+    height: 100%;
+
+}
